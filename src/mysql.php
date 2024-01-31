@@ -1,6 +1,6 @@
 <?php
 // Datenbankverbindung herstellen
-$servername = "localhost";
+$servername = "mysqldocker";
 $username = "user";
 $password = "geheim";
 $dbname = "verkauf";

@@ -5,14 +5,15 @@ services:
     build:
       context: ./mysql
       dockerfile: Dockerfile
-    container_name: mysql-container
+    container_name: mysqldocker
     networks:
       - mynetwork
 
   php-apache:
     build:
-      context: .
+      context: ./src
       dockerfile: Dockerfile
+    container_name: myphpdocker
     ports:
       - 80:80
     networks:
